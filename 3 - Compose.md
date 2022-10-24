@@ -1,4 +1,4 @@
-# Build complex Dockerfile using `docker-compose`
+**Build complex Dockerfile using `docker-compose`**
 
 Docker Compose is a tool that was developed to help define and share multi-container applications. 
 
@@ -8,8 +8,8 @@ Docker Compose is a tool that was developed to help define and share multi-conta
 `docker-compose version`
 
 Create config file in yml format:
->> nano docker-compose.yml
-
+> nano docker-compose.yml
+```sh
 version: '3'
 services:
     redis:
@@ -34,10 +34,12 @@ services:
 networks:
     frontend:
     backend:
-
+```
 
 To run the stack:
-`docker-compose up`
+```sh
+docker-compose up
+```
 
 
 References:
